@@ -1,0 +1,66 @@
+* {
+    /* text-align: center; */
+    margin: auto;
+}
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+#fish-tank {
+    height: calc(.40* 100vw);
+    width:80%;
+    border-width: 0 5px 5px 5px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 50px;
+    position:relative;
+    border-radius:0rem 0rem 2rem 2rem;
+    overflow:hidden;
+}
+#water {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    width: 100%;
+    background-color: rgb(187, 227, 248);
+}
+
+#wave2 {
+    background-color:rgb(161, 227, 232);
+    height: 80%;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    border-bottom-left-radius: 90% 70%;
+}
+
+img {
+    animation: move 10s ease-in-out  infinite;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    height: 40%;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(0%) scaleX(-1);
+    }
+    30% {
+        transform: translateX(400%) scaleX(-1);
+    }
+    
+    50% { transform: translateX(400%) scaleX(1);
+       
+     }
+    80% {
+        transform: translateX(0%) scaleX(1);
+    }
+    
+    100% {
+        transform: translateX(0%) scaleX(-1);
+    }
+    
+  }
